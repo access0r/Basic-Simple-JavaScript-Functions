@@ -1,0 +1,21 @@
+// this function will write in the default browser date into the element
+// of which you call on
+// date format is : DAY MONTH DD YYYY HH:MM:SS GMT+-XXXX [TIMEZONE]
+//
+// FOR THIS f() USE in HTML: <(el) id="thedate"></el>
+// invoke the date to write in <(el) id="thedate"></el> with a button and event
+// <button onclick="date"> (button string label) </button>
+// (el) = use an html element that can be handle text i.e, div, section, et...
+//
+// this f() is to be reffered in HTML document. NOT outside sourced, NOT seperate document.
+//
+//
+//
+
+<script>
+function date(){
+  const myDate = new Date();
+  var x = document.getElementById('thedate');
+  x.append(document.createTextNode(myDate));
+};
+</script>
